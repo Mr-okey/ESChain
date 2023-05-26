@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+    all: unset;
+    text-decoration: none;
+    color: #0e111f;
+}
+#bg {
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    width: 100vw;
+    background: linear-gradient(#f0f1f6 70%, rgb(138, 138, 220));
+}
+#main {
+    height: 100vh;
+    overflow: auto;
+    z-index: 2;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+#website-heading {
+    text-align: center;
+    margin-inline: auto;
+    width: 70%;
+    border-radius: 10px;
+    border-bottom: 1px solid #919191;
+    color: #0e111f;
+}
+#avail-trucks {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-inline: auto;
+    /* width: 80%;     */
+    padding: 0.5em;
+}
+
+.avail-truck-card {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.avail-truck-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+.truck-img, .truck-img > img {
+    width: 100%;
+}
+.avail-truck-info {
+    border: 1px solid rgb(197, 197, 197);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    justify-content: center;
+    align-items: center;
+}
+.avail-info {
+    color: green;
+}
+.avail-truck-booking:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.avail-truck-booking > a {
+    color: white;
+}
+.avail-truck-booking {
+    margin-inline: auto;
+    width: fit-content;
+    margin-top: 1em;
+    background: #0e111f;
+    font-weight: bold;
+    padding: 0.3em 0.5em;
+    border: 1px solid gold;
+    border-radius: 0.3em;
+}
