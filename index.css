@@ -13,7 +13,7 @@ a {
     height: 100vh;
     z-index: -1;
     width: 100vw;
-    background: linear-gradient(#f0f1f6 70%, rgb(138, 138, 220));
+    background: linear-gradient(#f0f1f6, rgb(138, 138, 220));
 }
 #main::-webkit-scrollbar {
     display: none;
@@ -86,4 +86,13 @@ a {
     padding: 0.3em 0.5em;
     border: 1px solid gold;
     border-radius: 0.3em;
+}
+
+@media only screen and (max-width: 500px){
+    .avail-truck-info:not(avail-truck-booking) {
+        font-size: 10px;
+    }
+    .truck-img {
+        width: 100px;
+    }
 }
